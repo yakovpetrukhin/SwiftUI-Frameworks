@@ -13,11 +13,12 @@
 		660197DA2B167B7C001616DA /* FrameworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197D92B167B7C001616DA /* FrameworkStack.swift */; };
 		660197DC2B167BA7001616DA /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197DB2B167BA7001616DA /* Framework.swift */; };
 		660197E02B167BE7001616DA /* FrameworksGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197DF2B167BE7001616DA /* FrameworksGridView.swift */; };
-		660197E22B169AF3001616DA /* FrameworkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197E12B169AF3001616DA /* FrameworkDetail.swift */; };
+		660197E22B169AF3001616DA /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197E12B169AF3001616DA /* FrameworkDetailView.swift */; };
 		660197E42B169EDD001616DA /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197E32B169EDD001616DA /* AFButton.swift */; };
 		660197E62B16A5A2001616DA /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197E52B16A5A2001616DA /* FrameworkGridViewModel.swift */; };
 		660197E82B16C928001616DA /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197E72B16C928001616DA /* SafariView.swift */; };
 		660197EA2B16D7A8001616DA /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660197E92B16D7A8001616DA /* XDismissButton.swift */; };
+		66EC8DDA2B263FC300DE835D /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8DD92B263FC300DE835D /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +29,12 @@
 		660197D92B167B7C001616DA /* FrameworkStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkStack.swift; sourceTree = "<group>"; };
 		660197DB2B167BA7001616DA /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		660197DF2B167BE7001616DA /* FrameworksGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksGridView.swift; sourceTree = "<group>"; };
-		660197E12B169AF3001616DA /* FrameworkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetail.swift; sourceTree = "<group>"; };
+		660197E12B169AF3001616DA /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		660197E32B169EDD001616DA /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		660197E52B16A5A2001616DA /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		660197E72B16C928001616DA /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		660197E92B16D7A8001616DA /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		66EC8DD92B263FC300DE835D /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,8 @@
 		660197F12B16DAA1001616DA /* FrameworkDetail */ = {
 			isa = PBXGroup;
 			children = (
-				660197E12B169AF3001616DA /* FrameworkDetail.swift */,
+				660197E12B169AF3001616DA /* FrameworkDetailView.swift */,
+				66EC8DD92B263FC300DE835D /* FrameworkDetailViewModel.swift */,
 			);
 			path = FrameworkDetail;
 			sourceTree = "<group>";
@@ -222,10 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66EC8DDA2B263FC300DE835D /* FrameworkDetailViewModel.swift in Sources */,
 				660197DC2B167BA7001616DA /* Framework.swift in Sources */,
 				660197E02B167BE7001616DA /* FrameworksGridView.swift in Sources */,
 				660197EA2B16D7A8001616DA /* XDismissButton.swift in Sources */,
-				660197E22B169AF3001616DA /* FrameworkDetail.swift in Sources */,
+				660197E22B169AF3001616DA /* FrameworkDetailView.swift in Sources */,
 				660197DA2B167B7C001616DA /* FrameworkStack.swift in Sources */,
 				660197E82B16C928001616DA /* SafariView.swift in Sources */,
 				660197E42B169EDD001616DA /* AFButton.swift in Sources */,

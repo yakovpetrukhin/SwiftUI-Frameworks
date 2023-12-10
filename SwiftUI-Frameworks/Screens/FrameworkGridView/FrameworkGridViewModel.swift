@@ -9,9 +9,9 @@ import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject { //  if the class won't have any children/subclasses mark
                                                       //  it as final for performance and safety
-//    var selectedFramework: Framework? {
-//        didSet { isShowingDetailView = true }
-//    }
+    var selectedFramework: Framework? {
+        didSet { isShowingDetailView = true }
+    }
 //    
     @Published var isShowingDetailView = false
     

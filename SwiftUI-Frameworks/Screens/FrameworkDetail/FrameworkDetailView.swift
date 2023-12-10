@@ -9,49 +9,55 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    var framework: Framework
+    @ObservedObject var viewModel: FrameworkDetailViewModel
+    
+//    var framework: Framework
 //    @Binding var isShowingDetailView: Bool
-    @State private var isShowingSafariView = false
+//    @State private var isShowingSafariView = false
     
     var body: some View {
         VStack{
 
-//            XDismissButton(isShowingSheet: $isShowingDetailView)
+            XDismissButton(isShowingSheet: $viewModel.isShowingDetailView.wrappedValue)
             
-//            Spacer()
+            Spacer()
             
-            FrameworkStack(framework: framework)
+            FrameworkStack(framework: viewModel.framework)
             
-            Text(framework.description)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
                 
             Spacer()
             
-            Button {
-                isShowingSafariView = true
-            } label: {
-//                AFButton(title: "Learn More ")
-                Label("Learn More", systemImage: "book.fill")
+            Link(destination: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!) {
+                AFButton(title: "Learn More")
             }
-//            .buttonStyle(.bordered)
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-//            .foregroundStyle(.yellow)
-//            .buttonBorderShape(.roundedRectangle(radius: 20.0))
-            .tint(.red)
+            
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+////                AFButton(title: "Learn More ")
+//                Label("Learn More", systemImage: "book.fill")
+//            }
+////            .buttonStyle(.bordered)
+//            .buttonStyle(.borderedProminent)
+//            .controlSize(.large)
+////            .foregroundStyle(.yellow)
+////            .buttonBorderShape(.roundedRectangle(radius: 20.0))
+//            .tint(.red)
             
         }
-        .fullScreenCover(isPresented: $isShowingSafariView,
-               content: {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
-        })
+//        .fullScreenCover(isPresented: $viewModel.isShowingSafariView,
+//               content: {
+//            SafariView(url: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!)
+//        })
     
           
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.frameworks[3])
+    FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: MockData.frameworks[1], isShowingDetailView: .constant(false)))
         .preferredColorScheme(.dark)
 }
