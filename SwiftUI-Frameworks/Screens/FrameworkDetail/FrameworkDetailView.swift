@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FrameworkDetail: View {
+struct FrameworkDetailView: View {
     
     var framework: Framework
 //    @Binding var isShowingDetailView: Bool
@@ -52,6 +52,6 @@ struct FrameworkDetail: View {
 }
 
 #Preview {
-    FrameworkDetail(framework: MockData.frameworks[3])
+    FrameworkDetailView(framework: MockData.frameworks[3])
         .preferredColorScheme(.dark)
 }
